@@ -1,0 +1,7 @@
+<h1><%= @blogger.name %></h1>
+
+<ul>
+    <li>Total Likes: <%= @blogger.total_likes %></li>
+    <li>Featured Post: <%= link_to "#{@blogger.featured_post.title}", post_path(@blogger.featured_post) %></li>
+
+</ul>
